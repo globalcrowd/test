@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+<title>ReCaptcha Test</title>
+ <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+ <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+ <script>
+     function printResponseToken(token) {
+        document.getElementById('responseToken').innerHTML = token;
+     }
+ </script>
+</head>
+<body>
+    <div class="g-recaptcha" data-sitekey="6Ld569AUAAAAAJ8bKdSR4QCf5Z09zOBYLXprOlWa" data-callback="printResponseToken" data-expired-callback=""></div>
+    </br>
+    <div id="responseToken"></div>
+</body>
+</html>
